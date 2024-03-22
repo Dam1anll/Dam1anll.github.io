@@ -1,7 +1,4 @@
 
-  
-
-/* Estilos para la tabla */
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -12,15 +9,15 @@
 .table td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #003366;
 }
 
 .table th {
-    background-color: #f8d7da; /* Cambia el color de fondo del encabezado */
-    color: #721c24; /* Cambia el color del texto del encabezado */
+    background-color: #003366; 
+    color: white; 
 }
 
-/* Centrado del título h1 */
+
 .text-center {
     text-align: center;
 }

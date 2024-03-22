@@ -1,21 +1,22 @@
-<div class="skit">
-    <h1 class="text-center">Productos de tecnología || API</h1>
+<div style="padding: 50px;">
+    <h1 class="text-center">Technology Product!</h1>
     <table class="table table-hover">
-        <thead class="skit">
+        <thead class="table-danger">
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Price</th>
-                <th scope="col">Product</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Producto</th>
             </tr>
         </thead>
-        <tbody>
-            @for (item of productList; track $index) {
+        <Body>
+            @for(item of productList; track $index)
+            {
                 <tr>
-                    <th class="row"> {{item.id}}</th>
+                    <th class="row">{{item.id}}</th>
                     <td>{{item.name}}</td>
-                    <td>{{item.description}}</td>
+                    <td>{{item.descripcion}}</td>
                     <td>
                         <span class="badge bg-success">
                             {{item.price}}
@@ -25,7 +26,7 @@
                         <img width="50" height="60" src="{{item.image}}" alt="product">
                     </td>
                 </tr>
-              }
-        </tbody>
+            }
+        </Body>
     </table>
 </div>

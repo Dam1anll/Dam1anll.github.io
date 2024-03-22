@@ -1,6 +1,6 @@
 export interface ProyectosInterface{
     id: number;
-    NombreP: string;
+    Nombre: string;
     Descripcion: string;
     Tecnologias: string;
 }

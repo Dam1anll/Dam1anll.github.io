@@ -1,6 +1,6 @@
 export class Proyectos{
     id?: number;
-    nombreP = "";
+    nombre = "";
     descripcion = "";
     tecnologias = "";
 }

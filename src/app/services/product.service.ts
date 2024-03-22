@@ -7,10 +7,12 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 
-  API_URL: string = 'https://mp32447456c53989e820.free.beeceptor.com/products';
-  constructor(private httpClient: HttpClient) { }
+  Api_URL : string = 'https://mp32447456c53989e820.free.beeceptor.com/products';
+  constructor(private httpClient: HttpClient)
+  {  }
 
-  getProducts(): Observable<any>{
-    return this.httpClient.get(this.API_URL).pipe(res => res);
+  getProduct(): Observable<any>
+  {
+    return this.httpClient.get(this.Api_URL).pipe(res => res);
   }
 }

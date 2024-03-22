@@ -9,17 +9,19 @@ import { ProductInterface } from '../../interfaces/product.interface';
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
+
+
 export class ProductComponent implements OnInit{
 
   productList : ProductInterface[]=[];
 
   constructor(private productService: ProductService) {}
   ngOnInit(): void {
-    this.getProducts()
+    this.getProduct()
   }
 
-  getProducts(){
-    this.productService.getProducts().subscribe({
+  getProduct(){
+    this.productService.getProduct().subscribe({
       next: (result) =>{
         this.productList = result.products;
       },

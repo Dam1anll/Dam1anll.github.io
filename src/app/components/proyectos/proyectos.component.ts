@@ -17,7 +17,7 @@ export class ProyectosComponent {
 
  seleccionarProyecto(proyecto: any) {
     if (this.proyectoSeleccionado === proyecto) {
-      this.proyectoSeleccionado = null; // Deselecciona el proyecto
+      this.proyectoSeleccionado = null; 
     } else {
       this.proyectoSeleccionado = proyecto;
     }
